@@ -53,7 +53,7 @@ pixel output array to solve for we can dramatically decrease the render time:
 
 ![afterThread.png](readmeImages/afterThread.png)
 
-Multithreading the output has increase the performance by nearly **780%**.
+Multithreading the output has increased the performance by nearly **780%**.
 
 However, for each thread we are checking every triangle for a hit test for every pixel. There are many triangles that will 
 never come close to a pixel we are testing. We are wasting time checking every triangle. If we have each thread test every triangle, but only 
